@@ -50,13 +50,13 @@ const OrderedBooks: React.FC = () => {
             <Row style={{ width: "100%" }} align="middle">
              
               <Col flex="none">
-                <Tag  style={{ fontWeight: "bold", backgroundColor:"#d9c9f5", color: "8A4AF3" }}>
+                <Tag  style={{ fontWeight: "bold", backgroundColor:"#d9c9f5", color: "8A4AF3", borderRadius: 25 }}>
                   {item.orderId}
                 </Tag>
               </Col>
 
               
-              <Col flex="auto" style={{ marginLeft: 8 }}>
+              <Col flex="auto" style={{ marginLeft: 8, color: 'rgba(0, 0, 0, 0.45)' }}>
                 {item.description}
               </Col>
 

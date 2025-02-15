@@ -33,7 +33,7 @@ const ActivityFeed: React.FC = () => {
   return (
     <Card
       style={{
-        width: 750,
+        width: 820,
         borderRadius: 8,
         margin: '20px auto',
         padding: 20,
@@ -53,7 +53,7 @@ const ActivityFeed: React.FC = () => {
         </Col>
       </Row>
 
-      {/* Activity List with no dividing lines (split={false}) */}
+    
       <List
         itemLayout="horizontal"
         dataSource={data}

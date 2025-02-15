@@ -56,12 +56,12 @@ const DonutChartExample: React.FC = () => {
       <Row justify="space-between" align="middle">
         <Col>
           <h3 style={{ marginBottom: 0 }}>Total Books</h3>
-          <p style={{ color: '#666', marginTop: 4 }}>
+          <p style={{ color: 'rgba(0, 0, 0, 0.45)', marginTop: 4 }}>
             Chart of all the available and borrowed books.
           </p>
         </Col>
         <Col>
-          <Button>
+          <Button style={{color: 'rgba(0, 0, 0, 0.45)'}}>
             Filter By <DownOutlined />
           </Button>
         </Col>

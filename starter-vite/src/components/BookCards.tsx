@@ -40,7 +40,7 @@ const data = [
 
 const BookCards: React.FC = () => {
   return (
-    <div style={{ maxWidth: 400, margin: '20px auto', marginLeft: 10 }}>
+    <div style={{ maxWidth: 400, margin: '20px auto', marginLeft: 10, maxHeight: 500, marginBottom: '5px' }}>
       <Row gutter={[16, 16]}>
         {data.map((item) => (
           <Col span={24} key={item.title}>
@@ -48,18 +48,19 @@ const BookCards: React.FC = () => {
               style={{
                 border: `2px solid ${item.color}`,
                 borderRadius: 8,
+                height: 100
               }}
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
                 {item.icon}
                 <div>
                   
-                  <div style={{ fontSize: 16, fontWeight: 'bold', color: item.color }}>
+                  <div style={{ fontSize: 24, fontWeight: 'bold', color: item.color }}>
                     {item.title}
                   </div>
                   
-                  <div style={{ marginTop: 4 }}>
-                    <span style={{ fontWeight: 'bold', color: item.color }}>{item.value}</span>{' '}
+                  <div style={{ marginTop: 4, color: 'rgba(0, 0, 0, 0.45)' }}>
+                    <span style={{ fontWeight: 'bold'}}>{item.value}</span>{' '}
                     {item.description}
                   </div>
                 </div>
