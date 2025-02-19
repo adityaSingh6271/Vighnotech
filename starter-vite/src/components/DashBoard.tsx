@@ -1,30 +1,51 @@
 import React from "react";
+import Sidebar from "./sidebar";
+import Navbar from "./navbar";
 import Header from "./Header";
 import Data from "./Data";
-import ActivityFeed from "./ActivityFeed";
 import BookCards from "./BookCards";
+import ActivityFeed from "./ActivityFeed";
 import OrderedBooks from "./OrderedBooks";
-import "./App.css"
+
 
 const Dashboard: React.FC = () => {
   return (
-    <div>
-      <Header />
-      <div className="dashboard-container">
-        {/* Left side */}
-        <div className="dashboard-left">
-          <Data />
-          <ActivityFeed />
-        </div>
-        
-        {/* Right side */}
-        <div className="dashboard-right">
-          <BookCards />
-          <OrderedBooks />
+    <div
+      style={{
+        display: "flex",
+        height: "100vh",
+        overflow: "hidden",
+        margin: 0,
+        padding: 0,
+      }}
+    >
+      <Sidebar />
+
+      <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
+        <Navbar />
+     {/* SCROLLABLE MAIN CONTENT */}
+        <div className="main"
+          style={{
+            flex: 1,
+            overflowY: "auto",
+            padding: "16px",
+          }}
+        >
+          <Header />
+
+          <div style={{ display: "flex", marginTop: 16, gap: 16 }}>
+            <Data />
+            <BookCards />
+          </div>
+
+          <div style={{ display: "flex", gap: 16 }}>
+            <ActivityFeed />
+            <OrderedBooks />
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Dashboard;
+export default Dashboard; 

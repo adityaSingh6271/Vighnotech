@@ -33,12 +33,14 @@ const ActivityFeed: React.FC = () => {
   return (
     <Card
       style={{
-        width: 820,
+        width: 700,
+        height: 450,
         borderRadius: 8,
         margin: '20px auto',
         padding: 20,
-        marginLeft:"42px",
-        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.15)'
+        marginLeft:"30px",
+        boxShadow: '0 4px 10px rgba(0, 0, 0, 0.15)',
+        marginTop: '-80px'
       }}
     >
      

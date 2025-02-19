@@ -34,10 +34,10 @@ const OrderedBooks: React.FC = () => {
         margin: "20px auto",
         padding: 20,
         maxHeight: 400,
-        marginLeft: 15,
+        marginRight: 80,
         overflowY: "scroll",
         scrollbarColor: "violet",
-        marginTop: "35px",
+        marginTop: '-80px',
         boxShadow: '0 4px 10px rgba(0, 0, 0, 0.15)'
       }}
     >

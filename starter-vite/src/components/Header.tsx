@@ -1,7 +1,9 @@
 import React from "react";
-import Tabs from "./Tabs";
+
 import { Card } from "antd";
-import { DownOutlined } from "@ant-design/icons";
+import Dropper from "../images/Dropper.png"
+import Tabbing from "./Tabbing";
+import TiaIcon from "../images/Tia.png"
 
 const Header: React.FC = () => {
   return (
@@ -12,7 +14,7 @@ const Header: React.FC = () => {
         alignItems: "center",
         justifyContent: "space-between",
         margin: "24px 20px 0 20px",
-        fontFamily: "Josefin Sans, serif"
+        fontFamily: "Josefin Sans, serif",
       }}
     >
       <div style={{ flex: 1 }}>
@@ -20,42 +22,30 @@ const Header: React.FC = () => {
         <p style={{ marginLeft: 22, color: "grey", marginTop: 5 }}>
           Tanvir Chavan
         </p>
-
-        <div
-          style={{
-            marginTop: "20px",
-            boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.35)',
-            width: "420px",
-            height: "50px",
-            borderRadius: "5px",
-            marginLeft: 10,
-            marginBottom: 4
-          }}
-        >
-          <Tabs />
-        </div>
+        <Tabbing />
       </div>
 
       <Card
         style={{
-          border: "2px solid blue",
+          border: "1px solid blue",
           borderRadius: "8px",
-          width: "115px",
-          height: "50px",
+          width: "145px",
+          height: "57px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
           padding: "0 8px",
           marginBottom: "100px",
+          marginRight: 50
         }}
       >
         <div
           style={{ display: "flex", alignItems: "center", marginLeft: "-15px" }}
         >
           <img
-            src="http://thakureducation.org/images/logo.png"
+            src={TiaIcon}
             alt="logo"
-            style={{ width: "24px", height: "24px" }}
+            style={{ width: "45px", height: "45px" }}
           />
           <div
             style={{
@@ -65,8 +55,8 @@ const Header: React.FC = () => {
               margin: "0 8px",
             }}
           />
-          <span style={{ color: "blue", fontWeight: 600 }}>TIA</span>
-          <DownOutlined style={{ color: "blue", fontSize: "12px" }} />
+          <span style={{ color: "blue", fontWeight: 700, fontSize: '16px'  }}>TIA</span>
+          <img src={Dropper} alt="dropdownIcon" height={10} style={{marginLeft: 5}}/>
         </div>
       </Card>
     </div>
